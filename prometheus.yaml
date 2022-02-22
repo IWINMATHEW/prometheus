@@ -35,7 +35,7 @@ scrape_configs:
       match[]:
         - '{job=~"kube-state-metrics|kubernetes-cadvisor"}'
     static_configs:
-      - targets: ['iwinmathew-qa-prometheussecondary-2-17.038ecc66.lowtouch.cloud:9090']
+      - targets: ['iwinmathew-qa-prometheussecondary-2-17.038ecc66.lowtouch.cloud']
 
   - job_name: 'node-exporter'
     static_configs:
