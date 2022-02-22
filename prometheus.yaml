@@ -35,7 +35,7 @@ scrape_configs:
       match[]:
         - '{job=~"kube-state-metrics|kubernetes-cadvisor"}'
     static_configs:
-      - targets: ['192.168.1.34:9090']
+      - targets: ['prometheussecondary-2-17:9090']
 
   - job_name: 'node-exporter'
     static_configs:
